@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fartbin Redirect</title>
+    <script>
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
+
+        document.onkeydown = function (e) {
+            if (e.keyCode == 123) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+                return false;
+            }
+        }
+    </script>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="fartbin.com">
+    <meta property="og:url" content="https://www.fartbin.com">
+    <meta property="og:title" content="fartbin.xyz ~ fartbin.com">
+    <meta property="og:description" content="just a simple html redirect">
+
+    <title>Redirecting</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        window.location.href = "https://fartbin.com"
+    </script>
+</body>
+
+</html>
